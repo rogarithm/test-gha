@@ -7,7 +7,7 @@ import com.example.gha.test.ci.member.MemberServiceImpl;
 
 public class MemberApp {
     public static void main(String[] args) {
-        System.out.println("hey!");
+        System.out.println("hey! again!");
         MemberService memberService = new MemberServiceImpl();
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
