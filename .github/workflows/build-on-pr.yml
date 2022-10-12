@@ -12,12 +12,8 @@ on:
     branches: [ main ]
     types: [ opened, synchronized ]
 
-permissions:
-  contents: read
-
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
@@ -30,5 +26,5 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
-      run: ./gradlew build
+      run: ./gradlew clean build
 
